@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    gap: 2px;
+    justify-content: space-between;
+}
+
+.left {
+    width: 23vw;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+.right {
+    width: 77vw;
+    background-color: #1c1c1c;
+    height: 37rem;
+    margin-top: 20px;
+    border-radius: 12px;
+
+}
+
+
+.home {
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+}
+
+.home .s {
+    color: rgb(179, 179, 179);
+}
+
+.home ul li {
+    display: flex;
+    width: 20px;
+    list-style-type: none;
+    gap: 14px;
+    padding-top: 14px;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.rounded {
+    border-radius: 12px;
+}
+
+.m1 {
+    margin: 7px;
+}
+
+.your_lib img {
+    width: 20px;
+    list-style-type: none;
+}
+
+.your_lib {
+    justify-content: space-between;
+    /* margin: 8px 16px; */
+    padding: 8px 16px;
+}
+
+.your_lib span {
+    color: rgb(179, 179, 179);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.your_lib_right {
+    display: flex;
+    align-items: center;
+}
+
+.your_lib_right img {
+    margin-right: 8px;
+}
+
+.library {
+    height: auto;
+    border-radius: 12px;
+}
+
+.create_playlist_div {
+    background-color: #1f1f1f;
+    padding: 16px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.create_playlist_div h3 {
+    margin-bottom: 8px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.create_playlist_div p {
+    margin-bottom: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+.create_playlist_div .SongList ul{
+    padding: 0 12px;
+    
+}
+
+.create_playlist_div .SongList ul li{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 12px 5px;
+    border: 1px solid white;
+    margin: 12px;
+    /* width: auto; */
+    justify-content: space-around;
+}
+
+.create_playlist_div div{
+    font-size: 12px;
+}
+
+
+.create_playlist_div .SongList ul li img{
+    margin-left: 3px;
+}
+
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.playnow span{
+    font-size: 8px;
+    padding-right:  5px;
+}
+
+
+
+.create_playlist_div button {
+    padding: 9px 15px;
+    border-radius: 26px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.podcasts_div {
+    background-color: #1f1f1f;
+    padding: 16px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.podcasts_div h3 {
+    margin-bottom: 8px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.podcasts_div p {
+    margin-bottom: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.podcasts_div button {
+    padding: 9px 15px;
+    border-radius: 26px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.left_scroll {
+    /* background-color: red; */
+    height: 200px;
+    overflow: auto;
+    overflow-y: scroll;
+    color: rgb(239, 238, 238);
+    margin-bottom: 40px;
+}
+
+.left_scroll::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+
+.left_scroll::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.left_scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.left_scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.lib_three {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: rgb(179, 179, 179);
+    padding: 24px;
+    row-gap: 15px;
+    /* margin: 25px 0; */
+}
+
+.lang_btn {
+    padding: 24px;
+    margin-bottom: 10px;
+}
+
+.lang_btn .Eng {
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 5px 7px;
+    color: white;
+    width: 80px;
+    border-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+}
+
+.lang_btn .Eng img {
+    padding-right: 5px;
+}
+
+.right nav {
+    background-color: #0e0d0d;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    border-radius: 12px;
+}
+
+.right .nav_btn {
+    display: flex;
+    gap: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.right .nav_btn .login {
+    background-color: white;
+    color: black;
+    padding: 8px 32px;
+    border-radius: 13px;
+}
+
+.right .nav_btn .login:hover{
+    font-weight: 720;
+    font-size: 17px;
+    background-color: rgb(238, 232, 232);
+}
+
+.right .nav_btn .sign_up {
+    padding-top: 10px;
+    align-items: center;
+    /* background-color: red; */
+    color: rgb(179, 179, 179);
+}
+
+.right .nav_btn .sign_up:hover{
+    font-weight: 720;
+    font-size: 17px;
+    color: white;
+}
+
+.music {
+    /* background-color: red; */
+}
+
+.music .Spotify_playlist {
+    background-color: #151515;
+    padding: 12px;
+    height: 31.5rem;
+
+    border-radius: 12px;
+    
+    overflow-y: scroll;
+}
+
+
+.music .Spotify_playlist .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 0 20px;
+}
+
+.music .Spotify_playlist h1 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+
+.music .Spotify_playlist .card {
+    border-style: solid;
+    border-width: 1px;
+    background-color: #3a3737;
+    border-radius: 12px;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+    position: relative;
+
+}
+
+.card .play_btn{
+    position: absolute;
+    top: 107px;
+    right: 13px;
+}
+
+.music .Spotify_playlist .card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.music .Spotify_playlist .card h3 {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    margin: 8px 0;
+}
+
+.music .Spotify_playlist .card p {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    color: rgb(179, 179, 179);
+}
+
+.spotify_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotify_footer_list{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    column-gap: 95px;
+}
+
+.spotify_footer_list .sf_heading{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+
+.spotify_footer_list ul li{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(179, 179, 179);
+    margin: 10px 0;
+}
+
+.spotify_footer_list ul{
+    list-style-type: none;
+}
+
+.social_footer{
+    display: flex;    
+}
+
+.social_footer .social_box{
+    background-color: rgb(45, 44, 44);
+    padding: 8px;
+    margin: 0 8px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.line{
+    border: 1px solid rgb(179, 179, 179);
+    margin: 12px;
+}
+
+.last{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(179, 179, 179);
+    margin-top: 35px;
+    margin-bottom: 45px;
+    margin-left: 15px;
+}
+
+.playbar{
+    background-color: rgba(140, 144, 140, 0.6);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    position:static;
+}
+
+.footer {
+    background-color: #855ac0;
+    height: auto;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+    padding: 15px;
+}
+
+.footer .foot_content h3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 3px;
+}
+
+
+.footer .foot_content p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.footer .foot_sign_up {
+    margin-top: 12px;
+}
+
+.footer .foot_sign_up span {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 32px;
+    border-radius: 15px;
+}
+
+

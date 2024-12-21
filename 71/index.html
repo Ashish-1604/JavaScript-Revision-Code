@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-red">
+        <div class="box" style="display: flex;">Hey I am a box 1</div>
+        <div class="box">Hey I am a box 2</div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        let div = document.createElement("div")
+        div.innerHTML = "I have been inserted. <b>by Harry</b>"
+        div.setAttribute("class","created")
+        document.querySelector(".container").append(div)
+        // document.querySelector(".container").before(div)
+        // document.querySelector(".container").after(div)
+        // document.querySelector(".container").prepend(div)
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin", "<b>Hey I am Harry </b>")
+        // cont.insertAdjacentHTML("afterend", "<b>Hey I am Harry </b>")
+        // cont.insertAdjacentHTML("beforebegin", "<b>Hey I am Harry </b>")
+        // cont.insertAdjacentHTML("beforeend", "<b>Hey I am Harry </b>")
+
+        document.querySelector(".box").remove()
+
+        console.log(document.querySelector(".container").classList)
+        console.log(document.querySelector(".container").className)
+        
+        console.log(document.querySelector(".container").classList.add("harry"))
+        console.log(document.querySelector(".container").classList.remove("harry"))
+
+        console.log(document.querySelector(".container").classList.toggle("red"))
+        console.log(document.querySelector(".container").classList.toggle("red"))
+
+
+    </script>
+</body>
+</html>
